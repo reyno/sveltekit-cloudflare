@@ -4,6 +4,7 @@
 
 <script lang="ts">
 	import Counter from '$lib/Counter.svelte';
+	export let item: string;
 </script>
 
 <svelte:head>
@@ -26,6 +27,8 @@
 	<h2>
 		try editing <strong>src/routes/index.svelte</strong>
 	</h2>
+
+	<h3>{item}</h3>
 
 	<Counter />
 </section>
